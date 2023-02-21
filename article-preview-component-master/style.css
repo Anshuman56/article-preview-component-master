@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background:hsl(210, 46%, 95%);
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+}
+main{
+    width: 733px;
+    height: 283px;
+    margin: 0 auto;
+    margin-top: 150px;
+    background:white;
+    display: flex;
+}
+.left>img{
+    width: 280px;
+    height: 283px;
+}
+/* right coloumn */
+.right{
+    margin: 40px 40px 0 40px;
+}
+h1{
+    font-size: 1.7em;
+    margin-bottom:20px;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+p{
+    line-height: 1.5em;
+    color:hsl(214, 17%, 51%);
+}
+.bottom-right{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+}
+.avatar-box{
+    display: flex;
+}
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+span{
+    display: block;
+    margin-top: .5em;
+}
+h2{
+    margin-top: .2em;
+    margin-left: 1.2em;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+h3{
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    color: hsl(214, 17%, 51%);
+}
+span{
+    font-weight: normal;
+    color: hsl(212, 23%, 69%);
+}
+.share-box{
+    position: relative;
+}
+/* hidden box */
+.hidden-box{
+    display: flex;
+    width: 250px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    border-radius: 10px;
+    background: hsl(217, 19%, 35%);
+    padding-left: 30px;
+    padding-right:30px;
+    top:-75px;
+    left: -110px;
+    box-shadow: 0px 2px 8px ;
+}
+#box{
+    display: none;
+}
+.hidden-box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background:hsl(217, 19%, 35%);
+    transform: rotate(45deg);
+    top:40px;
+}
+.hidden-box-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.icon-share{
+    width: 30px;
+    height: 30px;
+    background: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .1em;
+}
+.icon-share:hover{
+    background:hsl(217, 19%, 35%);
+}
